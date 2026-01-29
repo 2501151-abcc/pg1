@@ -78,5 +78,5 @@ function saveManga(){
 }
 function clearDataAndGoHome(){
     sessionStorage.removeItem("mangaData");
-    location.href='../docs/index.html';
+    location.href='../index.html';
 }

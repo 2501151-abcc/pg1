@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <title>読書記録</title>
-        <link rel="stylesheet" href="css/kousin.css">
-        <script defer src="js/kousin.js" charset="utf-8"></script>
-    </head>
-    <body>
-        <div id="alldiv">
-            <div id="leftdiv">
-                <div class="sidebar" id="home" onclick="location.href='../docs/index.html'">ホーム画面へ</div>
-                <div class="sidebar" id="sakuhin" onclick="location.href='作品一覧.html'">作品一覧</div>
-                <div class="sidebar" id="rireki" onclick="location.href='購入履歴.html'">購入履歴</div>
-                <div class="sidebar" id="rogu" onclick="location.href='読書ログ.html'">読書ログ</div>
-                <div class="sidebar" id="genru" onclick="location.href='ジャンル.html'">ジャンル別まとめ</div>
-                <div class="sidebar" id="henkou">登録情報の変更</div>
-            </div>
-            <div id="rightdiv">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>読書記録</title>
+    <link rel="stylesheet" href="css/kousin.css">
+    <script defer src="js/kousin.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="alldiv">
+        <div id="leftdiv">
+            <div class="sidebar" id="home" onclick="location.href='../index.html'">ホーム画面へ</div>
+            <div class="sidebar" id="sakuhin" onclick="location.href='作品一覧.html'">作品一覧</div>
+            <div class="sidebar" id="rireki" onclick="location.href='購入履歴.html'">購入履歴</div>
+            <div class="sidebar" id="rogu" onclick="location.href='読書ログ.html'">読書ログ</div>
+            <div class="sidebar" id="genru" onclick="location.href='ジャンル.html'">ジャンル別まとめ</div>
+            <div class="sidebar" id="henkou">登録情報の変更</div>
+        </div>
+        <div id="rightdiv">
             <div class="titleWrap">
                 <div id="h1">登 録 情 報 の 更 新</div>
             </div>
@@ -24,9 +26,9 @@
                 <div class="sotowaku">
                     <div class="signUpForm">
                         <div class="titleText">作品を選択</div>
-                            <select id="mangaSelect" class="holder">
-                                <option value="" disabled selected>選択してください</option>
-                            </select>
+                        <select id="mangaSelect" class="holder">
+                            <option value="" disabled selected>選択してください</option>
+                        </select>
                     </div>
                     <div class="signUpForm">
                         <div class="titleText">出版社</div>
@@ -44,19 +46,23 @@
                         <div id="titleText">進捗</div>
                         <div id="sintyokudiv">
                             <label class="radioLabel">
-                                <input type="radio" disabled name="sintyoku" value="planned" id="sintyoku1" oninput="validateForm()">
+                                <input type="radio" disabled name="sintyoku" value="planned" id="sintyoku1"
+                                    oninput="validateForm()">
                                 <span>購入予定</span>
                             </label>
                             <label class="radioLabel">
-                                <input type="radio" disabled name="sintyoku" value="unread" id="sintyoku2" oninput="validateForm()">
+                                <input type="radio" disabled name="sintyoku" value="unread" id="sintyoku2"
+                                    oninput="validateForm()">
                                 <span>未読</span>
                             </label>
                             <label class="radioLabel">
-                                <input type="radio" disabled name="sintyoku" value="reading" id="sintyoku3" oninput="validateForm()">
+                                <input type="radio" disabled name="sintyoku" value="reading" id="sintyoku3"
+                                    oninput="validateForm()">
                                 <span>読書中</span>
                             </label>
                             <label class="radioLabel">
-                                <input type="radio" disabled name="sintyoku" value="finished" id="sintyoku4" oninput="validateForm()">
+                                <input type="radio" disabled name="sintyoku" value="finished" id="sintyoku4"
+                                    oninput="validateForm()">
                                 <span>読了</span>
                             </label>
                         </div>
@@ -95,12 +101,13 @@
                     </div>
                 </div>
             </form>
-                <div id="buttonsotowaku">
-                    <button class="resetbutton" id="deleteBtn">作品を削除</button>
-                    <button class="submitbutton" id="saveBtn">登録情報を上書き</button>
-                </div>
+            <div id="buttonsotowaku">
+                <button class="resetbutton" id="deleteBtn">作品を削除</button>
+                <button class="submitbutton" id="saveBtn">登録情報を上書き</button>
             </div>
         </div>
-        <small>2501151 酒見遥斗</small>
-    </body>
+    </div>
+    <small>2501151 酒見遥斗</small>
+</body>
+
 </html>
