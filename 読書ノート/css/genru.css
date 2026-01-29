@@ -1,0 +1,134 @@
+body{
+    font-family: "YU Gothic", sans-serif;
+    padding:0;
+    margin:0;
+}
+#alldiv{
+    display:flex;
+}
+#leftdiv{
+    position:fixed;
+    height:100vh;
+    width:15vw;
+    background-color:#E6EEF3;
+    border-right: 2px solid #9BB4C3;
+}
+.sidebar{
+    padding:2vh 1.5vw;
+    color:#2A3A3F;
+    cursor:pointer;
+    transition:0.2s;
+}
+#genru{
+    background-color:#6FB3B8;
+    color:white;
+}
+.sidebar:hover{
+    background-color:#D8E4EB;
+}
+#rightdiv{
+    margin-left:15vw;
+    width:85vw;
+    padding: 4vh 3vw;
+    background:#F4F7F9;
+    min-height:100vh;
+    overflow-y:auto;
+    box-sizing:border-box;
+    border-left: 1px solid #D0DCE3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.genre-header{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1A2A2F;
+    width: 60vw;
+    max-width: 800px;
+    padding: 1vh 2vw;
+    background-color: #E6EEF3;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 3vh;
+}
+.genre-header:hover{
+    background-color: #D8E4EB;
+}
+.genre-header.open{
+    background-color: #C7D7E0;
+}
+.genre-group{
+    width: 60vw;
+    max-width: 800px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease;
+}
+.genre-item{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 1.5vh 2vw;
+    margin-top: 1vh;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.genre-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1F2E33;
+}
+.progress-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.progress-bar{
+    width: 200px;
+    height: 10px;
+    background-color: #E0E6EA;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.progress-fill{
+    height: 100%;
+    background-color: #6FB3B8;
+    border-radius: 5px;
+}
+.manga-title-line{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1F2E33;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.title{
+    margin-left: 4px;
+}
+.status{
+    margin-left: auto;
+    font-size: 0.9rem;
+    color: #4CAF50;
+    font-weight: 500;
+}
+.manga-detail{
+    font-weight: 600;
+    margin-left: 22px;
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #555;
+}
+small{
+    position:fixed;
+    bottom:10px;
+}

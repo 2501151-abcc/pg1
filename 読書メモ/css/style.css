@@ -1,0 +1,123 @@
+body{
+    font-family: "YU Gothic", sans-serif;
+}
+.titleWrap{
+    text-align:center;
+    margin-bottom: 1vh;
+}
+#h1{
+    margin: 6vh 0 2vh 0;
+    font-size: 5vh;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0 4vw;
+    border-bottom: 2px solid #000;
+    word-spacing: 0.3vw;
+}
+.titleRow{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.subText{
+    font-size: 1vw;
+    color: #2d2929;
+    font-weight: 600;
+}
+form{
+    width: 30vw;
+    margin: 0 auto;
+}
+.signUpForm{
+    margin-top: 3vh;
+}
+.signUpForm input,
+.signUpForm select{
+    font-size: 1.15vw;
+}
+.titleText{
+    font-weight: 570;
+    margin-bottom: 1vh;
+    padding-left: 0.5vw;
+    font-size: 1.25vw;
+}
+#sakuhinname{
+    width: 22vw;
+    height: 4.2vh;
+}
+#volume, #pages{
+    width: 8vw;
+    height: 3.4vh;
+}
+#dateInput{
+    font-size: 1.15vw;
+}
+#dateInput input{
+    font-size: 1.15vw;
+}
+.rangeRow{
+    display: flex;
+    align-items: center;
+    gap: 0.8vw;
+}
+#year{
+    width: 6vw;
+    height: 3.4vh;
+}
+#month, #day{
+    width: 3.5vw;
+    height: 3.4vh;
+}
+.holder{
+    width: 25vw;
+    height: 5vh;
+}
+.buttonArea{
+    text-align: center;
+    margin-top: 7vh;
+}
+button{
+    font-family: "YU Gothic", sans-serif;
+    font-size: 1.25vw;
+    font-weight: 600;
+    padding: 1.2vh 2.2vw;
+    border: 2px solid;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 1.8vw;
+    transition: 0.25s;
+}
+#sintyokudiv label{
+    margin-right: 1.5vw;
+}
+.resetbutton{
+    color: #c44;
+    border-color: #c44;
+}
+.resetbutton:hover{
+    color: #fff;
+    background-color: #c44;
+}
+.submitbutton:disabled {
+    background-color: #cccccc;
+    border:#cccccc;
+    cursor: not-allowed;
+}
+.submitbutton:not(:disabled){
+    color: #3366cc;
+    border-color: #3366cc;
+    background-color: transparent;
+}
+.submitbutton:not(:disabled):hover {
+    color: #fff;
+    background-color: #3366cc;
+}
+.homebutton{
+    color: #555;
+    border-color: #555;
+}
+.homebutton:hover{
+    color: #fff;
+    background-color: #555;
+}

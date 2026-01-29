@@ -1,0 +1,144 @@
+body{
+    font-family: "YU Gothic", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#alldiv{
+    display: flex;
+    height: 100vh;
+}
+#leftdiv{
+    position: fixed;
+    width: 15vw;
+    height: 100vh;
+    background-color: #E6EEF3;
+    border-right: 2px solid #9BB4C3;
+}
+.sidebar{
+    padding: 2vh 1.5vw;
+    color: #2A3A3F;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#henkou{
+    background-color: #6FB3B8;
+    color: white;
+}
+.sidebar:hover{
+    background-color: #D8E4EB;
+}
+#rightdiv{
+    margin-left: 15vw;
+    width: 85vw;
+    padding: 4vh 3vw;
+    background: #F4F7F9;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-left: 1px solid #D0DCE3;
+}
+.titleWrap{
+    width: 100%;
+    text-align: center;
+}
+#h1{
+    margin: 6vh 0 5vh;
+    font-size: 4.5vh;
+    display: inline-block;
+    padding: 0 4vw;
+    border-bottom: 2px solid #000;
+}
+form{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    width: 100%;
+}
+.sotowaku{
+    width: 28vw;
+}
+.signUpForm{
+    margin-top: 2vh;
+}
+.titleText,#titleText{
+    margin-bottom: 1vh;
+    padding-left: 0.5vw;
+    font-weight:500;
+    font-size: 1.2vw;
+}
+.holder{
+    width: 27vw;
+    height: 4.6vh;
+    font-size: 1.2vw;
+}
+#startVolume,#endVolume{
+    width: 4.5vw;
+    height: 4.6vh;
+    font-size: 1.2vw;
+}
+#dateInput{
+    font-size: 1.2vw;
+}
+#year{
+    width: 6vw;
+    height: 4.6vh;
+    font-size: 1.2vw;
+}
+#month,#day{
+    width: 4vw;
+    height: 4.6vh;
+    font-size: 1.2vw;
+}
+#sintyokudiv{
+    font-size: 1.35vw;
+}
+#sintyokudiv input[type="radio"]{
+    transform: scale(1.0);
+    margin-right: 0.3vw;
+}
+#genre{
+    width: 14vw;
+    height: 5.2vh;
+    font-size: 1.2vw;
+}
+input[disabled],select[disabled],textarea[disabled]{
+    background-color: #fafafa;
+    border: 1px solid #bbb;
+    color: #222;
+}
+#buttonsotowaku,.editButtons{
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+button{
+    font-family: "YU Gothic", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 600;
+    padding: 1vh 2vw;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.submitbutton,.saveButton{
+    color: #3366cc;
+    border: 2px solid #3366cc;
+}
+.submitbutton:hover,.saveButton:hover{
+    background-color: #3366cc;
+    color: white;
+}
+.resetbutton,.deleteButton{
+    color: #c44;
+    border: 2px solid #c44;
+}
+.resetbutton:hover,.deleteButton:hover{
+    background-color: #c44;
+    color: white;
+}
+small{
+    position:fixed;
+    bottom:10px;
+}

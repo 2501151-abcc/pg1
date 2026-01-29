@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ページ記録</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/script.js" type="text/javascript"charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="titleWrap">
+            <div id="h1">巻 数 ・ ペ ー ジ 記 録</div>
+        </div>
+        <form>
+            <div class="signUpForm">
+                <div class="titleText">作品名</div>
+                <select id="sakuhinname" name="sakuhinname" required oninput="onTitleChange(); validateBuyForm()">
+                    
+                </select>
+            </div>
+            <div class="signUpForm">
+                <div class="titleText">読んだ範囲</div>
+                <div class="rangeRow">
+                    <input type="number" id="volume" min="1" oninput="validateBuyForm()"> 巻 の
+                    <input type="number" id="pages" min="1" oninput="validateBuyForm()"> ページまで
+                </div>
+            </div>
+            <div class="signUpForm">
+                <div class="titleText">読書日</div>
+                <div id="dateInput">
+                    <input type="number" id="year" min="1900" max="2100" oninput="validateBuyForm()"> 年
+                    <input type="number" id="month" min="1" max="12" oninput="validateBuyForm()"> 月
+                    <input type="number" id="day" min="1" max="31" oninput="validateBuyForm()"> 日
+                </div>
+            </div>
+            <div class="signUpForm">
+                    <div class="titleText">進捗</div>
+                    <div id="sintyokudiv">
+                        <label class="radioLabel">
+                            <input type="radio" name="sintyoku" value="planned" id="sintyoku1" oninput="validateBuyForm()">
+                            <span>購入予定</span>
+                        </label>
+                        <label class="radioLabel">
+                            <input type="radio" name="sintyoku" value="unread" id="sintyoku2" oninput="validateBuyForm()">
+                            <span>未読</span>
+                        </label>
+                        <label class="radioLabel">
+                            <input type="radio" name="sintyoku" value="reading" id="sintyoku3" oninput="validateBuyForm()">
+                            <span>読書中</span>
+                        </label>
+                        <label class="radioLabel">
+                            <input type="radio" name="sintyoku" value="finished" id="sintyoku4" oninput="validateBuyForm()">
+                            <span>読了</span>
+                        </label>
+                    </div>
+                </div>
+            <div class="signUpForm">
+                <div class="titleText">メモ（任意）</div>
+                <input type="text" class="holder" id="memo">
+            </div>
+        </form>
+    <div class="buttonArea">
+        <button class="homebutton" onclick="location.href='../インデックス/index.html'">ホームへ戻る</button>
+        <button class="resetbutton" onclick="resetForm()">リセット</button>
+        <button class="submitbutton" disabled onclick="savePageRecord()">登録</button>
+    </div>
+    <small>2501151 酒見遥斗</small>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>新規漫画登録</title>
+        <link rel="stylesheet" href="css/style1.css">
+        <script defer src="js/script1.js" type="text/javascript"charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="lurer">
+            <div class="lurerDisplay">
+                <div class="circle" id="a">１</div>
+                <div>入力画面</div>
+            </div>
+            <div class="lurerBorder"></div>
+            <div class="lurerDisplay">
+                <div class="circle" id="b">２</div>
+                <div>入力確認</div>
+            </div>
+            <div class="lurerBorder"></div>
+            <div class="lurerDisplay">
+                <div class="circle" id="c">３</div>
+                <div>登録完了</div>
+            </div>
+        </div>
+        <div class="titleWrap">
+            <div id="h1">新 規 漫 画 登 録</div>
+        </div>
+        <form>
+            <div class="sotowaku">
+                <div class="signUpForm">
+                    <div class="titleText">作品名</div>
+                    <input type="text" class="holder" id="title" oninput="validateForm()">
+                </div>
+                <div class="signUpForm">
+                    <div class="titleText">出版社</div>
+                    <input type="text" class="holder" id="publisher" oninput="validateForm()">
+                </div>
+                <div class="signUpForm">
+                    <div class="titleText">購入日</div>
+                    <div id="dateInput">
+                        <input type="number" id="year"  min="1900" max="2100" oninput="validateForm()"> 年
+                        <input type="number" id="month"  min="1" max="12" oninput="validateForm()"> 月
+                        <input type="number" id="day"  min="1" max="31" oninput="validateForm()"> 日
+                    </div>
+                </div>
+                <div class="signUpForm">
+                    <div id="titleText">進捗</div>
+                    <div id="sintyokudiv">
+                        <input type="radio" name="sintyoku" id="sintyoku" value="planned" onclick="validateForm()">購入予定
+                        <input type="radio" name="sintyoku" id="sintyoku1" value="unread" onclick="validateForm()">未読
+                        <input type="radio" name="sintyoku" id="sintyoku2" value="reading" onclick="validateForm()">読書中
+                        <input type="radio" name="sintyoku" id="sintyoku3" value="finished" onclick="validateForm()">読了
+                    </div>
+                </div>
+            </div>
+            <div class="sotowaku">
+                <div class="signUpForm">
+                    <div class="titleText">著者</div>
+                    <input type="text" class="holder" id="author" oninput="validateForm()">
+                </div>
+                <div class="signUpForm">
+                    <div class="titleText">所持巻</div>
+                    <div>
+                        <input type="number" id="startVolume" min="1" oninput="validateForm()"> 巻 ～
+                        <input type="number" id="endVolume" min="1" oninput="validateForm()"> 巻
+                    </div>
+                </div>
+                <div class="signUpForm">
+                    <div class="titleText">ジャンル</div>
+                    <select id="genre" name="genre" required oninput="validateForm()" required>
+                        <option value="" disabled selected>選択してください</option>
+                        <option value="action">アクション・バトル</option>
+                        <option value="suspense">サスペンス・ミステリー</option>
+                        <option value="love">恋愛・日常</option>
+                        <option value="comedy">コメディ</option>
+                        <option value="youth">学園・青春</option>
+                        <option value="SF">SF・未来</option>
+                        <option value="history">歴史・時代劇</option>
+                        <option value="entertainment">エンタメ</option>
+                        <option value="horror">ホラー</option>
+                    </select>
+                </div>
+                <div class="signUpForm">
+                    <div class="titleText">メモ（任意）</div>
+                    <input type="text" class="holder" id="memo">
+                </div>
+            </div>
+        </form>
+        <div id="buttonsotowaku">
+            <button class="homebutton" onclick="clearDataAndGoHome()">ホームへ戻る</button>
+            <button class="resetbutton" onclick="resetForm()">リセット</button>
+            <button class="submitbutton" disabled onclick="saveManga()">確認画面へ</button>
+        </div>
+        <small>2501151 酒見遥斗</small>
+    </body>
+</html>

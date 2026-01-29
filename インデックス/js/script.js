@@ -1,0 +1,1 @@
+<script defer src="js/script.js" type="text/javascript"charset="utf-8"></script>

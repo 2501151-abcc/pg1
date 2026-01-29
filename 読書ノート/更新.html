@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>読書記録</title>
+        <link rel="stylesheet" href="css/kousin.css">
+        <script defer src="js/kousin.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="alldiv">
+            <div id="leftdiv">
+                <div class="sidebar" id="home" onclick="location.href='../インデックス/index.html'">ホーム画面へ</div>
+                <div class="sidebar" id="sakuhin" onclick="location.href='作品一覧.html'">作品一覧</div>
+                <div class="sidebar" id="rireki" onclick="location.href='購入履歴.html'">購入履歴</div>
+                <div class="sidebar" id="rogu" onclick="location.href='読書ログ.html'">読書ログ</div>
+                <div class="sidebar" id="genru" onclick="location.href='ジャンル.html'">ジャンル別まとめ</div>
+                <div class="sidebar" id="henkou">登録情報の変更</div>
+            </div>
+            <div id="rightdiv">
+            <div class="titleWrap">
+                <div id="h1">登 録 情 報 の 更 新</div>
+            </div>
+            <form>
+                <div class="sotowaku">
+                    <div class="signUpForm">
+                        <div class="titleText">作品を選択</div>
+                            <select id="mangaSelect" class="holder">
+                                <option value="" disabled selected>選択してください</option>
+                            </select>
+                    </div>
+                    <div class="signUpForm">
+                        <div class="titleText">出版社</div>
+                        <input type="text" class="holder" id="publisher" disabled>
+                    </div>
+                    <div class="signUpForm">
+                        <div class="titleText">購入日</div>
+                        <div id="dateInput">
+                            <input type="number" id="year" disabled min="1900" max="2100"> 年
+                            <input type="number" id="month" disabled min="1" max="12"> 月
+                            <input type="number" id="day" disabled min="1" max="31"> 日
+                        </div>
+                    </div>
+                    <div class="signUpForm">
+                        <div id="titleText">進捗</div>
+                        <div id="sintyokudiv">
+                            <label class="radioLabel">
+                                <input type="radio" disabled name="sintyoku" value="planned" id="sintyoku1" oninput="validateForm()">
+                                <span>購入予定</span>
+                            </label>
+                            <label class="radioLabel">
+                                <input type="radio" disabled name="sintyoku" value="unread" id="sintyoku2" oninput="validateForm()">
+                                <span>未読</span>
+                            </label>
+                            <label class="radioLabel">
+                                <input type="radio" disabled name="sintyoku" value="reading" id="sintyoku3" oninput="validateForm()">
+                                <span>読書中</span>
+                            </label>
+                            <label class="radioLabel">
+                                <input type="radio" disabled name="sintyoku" value="finished" id="sintyoku4" oninput="validateForm()">
+                                <span>読了</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sotowaku">
+                    <div class="signUpForm">
+                        <div class="titleText">著者</div>
+                        <input type="text" class="holder" id="author" disabled>
+                    </div>
+                    <div class="signUpForm">
+                        <div class="titleText">所持巻</div>
+                        <div>
+                            <input type="number" id="startVolume" min="1" oninput="validateForm()" disabled> 巻 ～
+                            <input type="number" id="endVolume" min="1" oninput="validateForm()" disabled> 巻
+                        </div>
+                    </div>
+                    <div class="signUpForm">
+                        <div class="titleText">ジャンル</div>
+                        <select id="genre" name="genre" required>
+                            <option value="" disabled selected>選択してください</option>
+                            <option value="action" disabled>アクション・バトル</option>
+                            <option value="suspense" disabled>サスペンス・ミステリー</option>
+                            <option value="love" disabled>恋愛・日常</option>
+                            <option value="comedy" disabled>コメディ</option>
+                            <option value="youth" disabled>学園・青春</option>
+                            <option value="SF" disabled>SF・未来</option>
+                            <option value="history" disabled>歴史・時代劇</option>
+                            <option value="entertainment" disabled>エンタメ</option>
+                            <option value="horror" disabled>ホラー</option>
+                        </select>
+                    </div>
+                    <div class="signUpForm">
+                        <div class="titleText">メモ（任意）</div>
+                        <input type="text" class="holder" id="memo" disabled>
+                    </div>
+                </div>
+            </form>
+                <div id="buttonsotowaku">
+                    <button class="resetbutton" id="deleteBtn">作品を削除</button>
+                    <button class="submitbutton" id="saveBtn">登録情報を上書き</button>
+                </div>
+            </div>
+        </div>
+        <small>2501151 酒見遥斗</small>
+    </body>
+</html>

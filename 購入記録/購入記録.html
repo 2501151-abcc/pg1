@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>購入記録</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/script.js" type="text/javascript"charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="titleWrap">
+            <div id="h1">買 い 足 し 登 録</div>
+        </div>
+        <form>
+            <div class="signUpForm">
+                <div class="titleText">作品名</div>
+                <select id="sakuhinname" name="sakuhinname" required oninput="onTitleChange(); validateBuyForm()">
+                </select>
+            </div>
+            <div id="lastBuyInfo"></div>
+            <div class="signUpForm">
+                <div class="titleRow">
+                    <div class="titleText">購入巻</div>
+                    <div class="subText">(まとめ買いの場合は最終巻を入力してください)</div>
+                </div>
+                <input type="number" id="volume" min="1" oninput="validateBuyForm()">
+            </div>
+            <div class="signUpForm">
+                <div class="titleText">購入日</div>
+                <div id="dateInput">
+                    <input type="number" id="year" min="1900" max="2100" oninput="validateBuyForm()"> 年
+                    <input type="number" id="month" min="1" max="12" oninput="validateBuyForm()"> 月
+                    <input type="number" id="day" min="1" max="31" oninput="validateBuyForm()"> 日
+                </div>
+            </div>
+            <div class="signUpForm">
+                <div class="titleText">メモ（任意）</div>
+                <input type="text" class="holder" id="memo">
+            </div>
+        </form>
+    <div class="buttonArea">
+        <button class="homebutton" onclick="location.href='../インデックス/index.html'">ホームへ戻る</button>
+        <button class="resetbutton" onclick="resetForm()">リセット</button>
+        <button class="submitbutton" onclick="saveBuyData()" disabled>登録</button>
+    </div>
+    <small>2501151 酒見遥斗</small>
+    </body>
+</html>

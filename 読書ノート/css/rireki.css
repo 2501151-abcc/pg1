@@ -1,0 +1,88 @@
+body{
+    font-family: "YU Gothic", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#alldiv{
+    display: flex;
+    height: 100vh;
+}
+#leftdiv{
+    position: fixed;
+    width: 15vw;
+    height: 100vh;
+    background-color: #E6EEF3;
+    border-right: 2px solid #9BB4C3;
+}
+.sidebar{
+    padding: 2vh 1.5vw;
+    color: #2A3A3F;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#rireki{
+    background-color: #6FB3B8;
+    color: white;
+}
+.sidebar:hover{
+    background-color: #D8E4EB;
+}
+#rightdiv{
+    margin-left: 15vw;
+    width: 85vw;
+    padding: 4vh 3vw;
+    background: #F4F7F9;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-left: 1px solid #D0DCE3;
+    display: flex;
+    justify-content: center;
+}
+.rireki-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    width: 100%;
+}
+.rireki-card{
+    width: 60vw;
+    max-width: 800px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 2vh 2vw;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    display: flex;
+    gap: 1.2vw;
+    align-items: center;
+    transition: 0.15s ease-out;
+}
+.rireki-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+.rireki-date{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #8A9AA0;
+    min-width: 6rem;
+}
+.rireki-title-text{
+    font-size: 1.35rem;
+    font-weight: 650;
+    color: #1A2A2F;
+}
+.rireki-sub{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #3A4A50;
+}
+.rireki-memo{
+    font-size: 0.95rem;
+    color: #6A7A80;
+}
+small{
+    position:fixed;
+    bottom:10px;
+}

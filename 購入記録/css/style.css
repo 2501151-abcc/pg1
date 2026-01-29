@@ -1,0 +1,130 @@
+body{
+    font-family: "YU Gothic", sans-serif;
+}
+.titleWrap{
+    text-align:center;
+}
+#h1{
+    margin:6vh 0px;
+    font-size:5vh;
+    font-weight:500;
+    text-align:center;
+    word-spacing: 0.3vw;
+    display:inline-block;
+    padding:0 4vw;
+    border-bottom:2px solid #000000;
+    text-align:center;
+}
+.titleRow{
+    display: flex;
+    align-items: center;
+    gap: 1vw; 
+}
+.subText{
+    font-size: 1vw;
+    color: #2d2929;
+    font-weight: 600;
+}
+.holder{
+    width:25vw;
+    height:4vh;
+}
+form{
+    width: 27vw;
+    margin: 0 auto;
+}
+.signUpForm input,
+.signUpForm select {
+    font-size: 1.1vw;
+}
+.signUpForm{
+    margin-top:3vh;
+}
+.titleText{
+    font-weight:570;
+    margin-bottom:0.5vh;
+    padding-left:0.5vw;
+    font-size:1.2vw;
+}
+#lastBuyInfo{
+    font-weight:570;
+    margin-top:1vh;
+    margin-bottom:-2.5vh;
+    font-size:1.1vw;
+    color: #444444;
+    padding-left:0.5vw;
+}
+#volume{
+    width:7vw;
+    height:4vh;
+}
+#dateInput{
+    font-size:1.1vw;
+    height: 4vh;
+}
+#year{
+    width:5vw;
+    height:4vh;
+}
+#month{
+    width:3vw;
+    height:4vh;
+}
+#day{
+    width:3vw;
+    height:4vh;
+}
+#sakuhinname{
+    width:20vw;
+    height:5vh;  
+}
+.buttonArea{
+    text-align: center;
+    margin-top: 6vh;
+}
+
+button{
+    font-family: "YU Gothic", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding: 1vh 2vw;
+    border: 2px solid;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 2vw;
+    transition: 0.25s;
+}
+.resetbutton{
+    color: #c44;
+    border-color: #c44;
+    background-color: transparent;
+}
+.resetbutton:hover{
+    color: #fff;
+    background-color: #c44;
+}
+.submitbutton:disabled {
+    background-color: #cccccc;
+    border:#cccccc;
+    cursor: not-allowed;
+}
+.submitbutton:not(:disabled){
+    color: #3366cc;
+    border-color: #3366cc;
+    background-color: transparent;
+}
+.submitbutton:not(:disabled):hover {
+    color: #fff;
+    background-color: #3366cc;
+}
+.homebutton{
+    color: #555;
+    border-color: #555;
+    background-color: transparent;
+}
+
+.homebutton:hover{
+    color: #fff;
+    background-color: #555;
+}
